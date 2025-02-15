@@ -306,35 +306,66 @@
     display: none;
 }
 
-@media(max-width:768px) {
+@media only screen and (max-width: 900px) {
+    /* Hide the sidebar off-screen by default */
     .left {
-        /* background-color: red; */
-        position: absolute;
-        left: -120%;
-        transition: all .3s;
-        z-index: 1;
-        width: 373px;
-        background-color: black;
+      position: fixed;
+      top: 0;
+      left: -100%;
+      width: 70vw;
+      height: 100vh;
+      background-color: #121212; /* Use same bg as .bg-greay */
+      z-index: 1000;
+      overflow-y: auto;
+      transition: left 0.3s ease;
+      padding: 10px;
     }
-    .left .close {
-        display: block;
-        position: absolute;
-        right: 31px;
-        top: 25px;
-        width: 29px;
-    }
-
-
-
     .right {
-        width: 100vw;
-        margin: 0;
+      width: 100%;
+      margin: 0;
     }
-
+    /* Adjust header layout */
+    .header {
+        display: flex
+        ;
+            justify-content: space-between;
+            background-color: rgb(34, 34, 34);
+    }
+    .buttons {
+      margin-top: 10px;
+    }
+    /* Make album cards smaller and centered */
+    .card {
+      width: 45%;
+      margin: 5px;
+    }
+    .cardContainer {
+      justify-content: center;
+    }
+    /* Stretch playbar and reduce padding */
     .playbar {
-        width: 88vw;
+        position: relative;
+        width: 95%;
+        padding: 8px;
+        left: 1px;
+        bottom: -73px;
     }
-
+    /* Adjust song info and time for smaller screens */
+    .songinfo,
+    .songtime {
+      width: auto;
+      font-size: 12px;
+    }
+    /* Show hamburger and close icons for mobile navigation */
+    
+    .close {
+        position: relative;
+        display: block;
+        cursor: pointer;
+        left: 87%;
+        top: 8%;
+        z-index: 0;
+    }
     .hamburger {
         display: block;
     }
@@ -345,26 +376,17 @@
         align-items: center;
         gap: 30px;
     }
-    .playbar{
+    .hamburger{
         position: relative;
-        width: 88vw;
-        font-size: 13px;
-        bottom: -45vh;
-        left: -1vh;
+        display: block;
+        cursor: pointer;
+        left: 8%;
+        top: -1px;
+        z-index: 0;
     }
-    .songbuttons{
-        width: 96%;
-    }
-    .card{
-        width: 30vw;
-    }
-    .songbuttons img{
-        position: relative;
-    top: 15px;
-    left: 48px;
-    }
-    .spotfyplaylist {
-        height: 80vh;
-        padding: 19px;
+    .buttons {
+        margin-top: 10px;
+        display: flex
+;
     }
 }
