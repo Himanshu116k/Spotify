@@ -18,32 +18,21 @@
       ]
     },
     {
-      "name": "My",
+      "name": "God",
       "songs": [
         {
-          "title": "Song 3",
-          "filename": "p1.mp3"
-        },
-        {
-          "title": "Song 4",
-          "filename": "p2.mp3"
-        },
-        {
-          "title": "Song 4",
-          "filename": "p3.mp3"
-        },
-        {
-          "title": "Song 4",
-          "filename": "p4.mp3"
+          "title": "Shree Ram Chandra",
+          "filename": "Shree_Ram_Chandra.mp3"
         }
+       
       ]
     },
     {
-      "name": "Album3",
+      "name": "Bojpuri",
       "songs": [
         {
-          "title": "Song 5",
-          "filename": "song5.mp3"
+          "title": "Piya Ji Ke Muski",
+          "filename": "PiyaJi_ke_muski.mp3"
         },
         {
           "title": "Song 6",
