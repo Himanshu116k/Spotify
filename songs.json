@@ -1,0 +1,55 @@
+{
+  "albums": [
+    {
+      "name": "My_fav",
+      "songs": [
+        {
+          "title": "Brown rang",
+          "filename": "Brown_rang.mp3"
+        },
+        {
+          "title": "Doom tana",
+          "filename": "Doom_tana.mp3"
+        },
+        {
+          "title": "Millionaire",
+          "filename": "Millionaire.mp3"
+        }
+      ]
+    },
+    {
+      "name": "My",
+      "songs": [
+        {
+          "title": "Song 3",
+          "filename": "p1.mp3"
+        },
+        {
+          "title": "Song 4",
+          "filename": "p2.mp3"
+        },
+        {
+          "title": "Song 4",
+          "filename": "p3.mp3"
+        },
+        {
+          "title": "Song 4",
+          "filename": "p4.mp3"
+        }
+      ]
+    },
+    {
+      "name": "Album3",
+      "songs": [
+        {
+          "title": "Song 5",
+          "filename": "song5.mp3"
+        },
+        {
+          "title": "Song 6",
+          "filename": "song6.mp3"
+        }
+      ]
+    }
+  ]
+}
