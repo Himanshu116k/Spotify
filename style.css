@@ -309,21 +309,25 @@
 @media only screen and (max-width: 900px) {
     /* Hide the sidebar off-screen by default */
     .left {
-      position: fixed;
-      top: 0;
-      left: -100%;
-      width: 70vw;
-      height: 100vh;
-      background-color: #121212; /* Use same bg as .bg-greay */
-      z-index: 1000;
-      overflow-y: auto;
-      transition: left 0.3s ease;
-      padding: 10px;
+        position: absolute;
+        left: -120%;
+        transition: all .3s;
+        z-index: 1;
+        width: 373px;
+        background-color: black;
     }
     .right {
       width: 100%;
       margin: 0;
     }
+    .left .close {
+        display: block;
+        position: absolute;
+        right: 31px;
+        top: 25px;
+        width: 29px;
+    }
+
     /* Adjust header layout */
     .header {
         display: flex
