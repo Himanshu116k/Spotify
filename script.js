@@ -1,6 +1,6 @@
 let songs;
 let currfolder;
-
+alert("Welcome Develop by Himanshu Kumar");
 let currentSong = new Audio();
 
 function secondsToMinutesSeconds(seconds) {
