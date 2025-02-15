@@ -60,6 +60,7 @@ async function getsongs(albumName) {
     return songs;
   } catch (error) {
     console.error("Error fetching songs:", error);
+    return [];
   }
 }
 
@@ -98,12 +99,29 @@ async function displayAlbum() {
   }
 }
 
+// This function sets up auto-next functionality when a song ends
+function setupAutoNext() {
+  currentSong.addEventListener("ended", () => {
+    // Decode the filename from the currentSong's src
+    const currentFilename = decodeURIComponent(currentSong.src.split("/").pop());
+    const currentIndex = songs.indexOf(currentFilename);
+
+    // Check if there's more than one song and if the current song isn't the last one
+    if (songs.length > 1 && currentIndex < songs.length - 1) {
+      playMusic(songs[currentIndex + 1]);
+    }
+  });
+}
+
 async function main() {
   // For testing, load an album by its name (e.g., "My_fav")
   songs = await getsongs("My_fav");
   if (songs && songs.length > 0) {
     playMusic(songs[0], true);
   }
+
+  // Attach auto-next functionality after initializing the player
+  setupAutoNext();
 
   // Optionally, display all albums on a page
   // displayAlbum();
@@ -150,13 +168,15 @@ async function main() {
 
   // Next and Previous song events
   previous.addEventListener("click", () => {
-    let index = songs.indexOf(currentSong.src.split("/").pop());
+    const currentFilename = decodeURIComponent(currentSong.src.split("/").pop());
+    let index = songs.indexOf(currentFilename);
     if ((index - 1) >= 0) {
       playMusic(songs[index - 1]);
     }
   });
   next.addEventListener("click", () => {
-    let index = songs.indexOf(currentSong.src.split("/").pop());
+    const currentFilename = decodeURIComponent(currentSong.src.split("/").pop());
+    let index = songs.indexOf(currentFilename);
     if ((index + 1) < songs.length) {
       playMusic(songs[index + 1]);
     }
