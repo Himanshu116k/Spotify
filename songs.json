@@ -23,6 +23,18 @@
         {
           "title": "Shree Ram Chandra",
           "filename": "Shree_Ram_Chandra.mp3"
+        },
+        {
+          "title": "Hanuman Chalisa",
+          "filename": "Hanuman_chalisa.mp3"
+        },
+        {
+          "title": "achyutam-keshavam",
+          "filename": "achyutam-keshavam.mp3"
+        },
+        {
+          "title": "radha-rani",
+          "filename": "radha-rani.mp3"
         }
        
       ]
@@ -35,8 +47,20 @@
           "filename": "PiyaJi_ke_muski.mp3"
         },
         {
-          "title": "Song 6",
-          "filename": "song6.mp3"
+          "title": "palang-sagwan-ke",
+          "filename": "palang-sagwan-ke.mp3"
+        },
+        {
+          "title": "aaho-raajaa",
+          "filename": "aaho-raajaa.mp3"
+        },
+        {
+          "title": "apnaa-raajaa-jii",
+          "filename": "apnaa-raajaa-jii.mp3"
+        },
+        {
+          "title": "bbuaan-se-hila",
+          "filename": "bbuaan-se-hila.mp3"
         }
       ]
     }
