@@ -26,6 +26,14 @@
         {
           "title": "paththavaikkum",
           "filename": "paththavaikkum.mp3"
+        },
+        {
+          "title": "Shubh - Supreme",
+          "filename": "Supream.mp3"
+        },
+        {
+          "title": "Bahut-Jatate-Ho-Chah-Humse",
+          "filename": "Bahut-Jatate-Ho-Chah-Humse.mp3"
         }
       ]
     },
@@ -74,6 +82,24 @@
           "title": "bbuaan-se-hila",
           "filename": "bbuaan-se-hila.mp3"
         }
+      ]
+    },
+    {
+      "name": "English",
+      "songs": [
+        {
+          "title": "The Neighbourhood",
+          "filename": "The_Neighbourhood.mp3"
+        },
+        {
+          "title": "Mockingbird Slowed",
+          "filename": "Mockingbird_Slowed.mp3"
+        },
+        {
+          "title": "Indila-Love Story",
+          "filename": "Indila-Love-Story.mp3"
+        }
+      
       ]
     }
   ]
